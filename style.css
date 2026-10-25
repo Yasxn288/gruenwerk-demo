@@ -140,3 +140,32 @@
 .picker-footer{display:flex;align-items:center;justify-content:space-between;margin-top:16px;border-top:1px solid var(--border);padding-top:10px}
 .picker-days>button:focus-visible,.picker-months>button:focus-visible{outline:3px solid #86b89c;outline-offset:1px}
 .picker-days>button:disabled,.picker-months>button:disabled{opacity:.35;cursor:not-allowed}
+
+/* One place for employee availability; one calendar for payment dates. */
+.managed-person.with-availability{display:grid;grid-template-columns:18px minmax(0,1fr) auto auto;align-items:center}
+.managed-person .availability-toggle{font-size:10px;padding:8px 9px;gap:5px}
+.managed-person b.staff-calendar-name{color:var(--staff-ink)}
+.managed-person .availability-summary{color:#57775c}
+.staff-availability-editor{grid-column:1/-1;background:#f7f9f3;padding:18px;border:1px solid var(--border);border-radius:7px;width:100%}
+.staff-availability-editor label{display:flex;flex-direction:column;gap:7px;font-size:11px;color:#60745e}
+.staff-availability-editor input,.staff-availability-editor select{width:100%;min-width:0;padding:9px;border:1px solid #dfe5d9;border-radius:5px;background:white;font-size:12px;color:var(--ink)}
+.availability-fields{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:10px;margin-bottom:12px}
+.availability-save{display:flex;align-items:center;gap:20px;justify-content:space-between;margin-top:12px}
+.availability-save small{font-size:10px;line-height:1.6;max-width:300px}
+.availability-save .primary{font-size:11px;padding:9px 11px}
+.availability-periods>div{display:flex;gap:14px;align-items:center;justify-content:space-between;border-top:1px solid var(--border);margin-top:12px;padding-top:9px}
+.availability-periods .text-button{font-size:11px}
+.availability-periods .text-button:first-child{display:flex;flex-direction:column;gap:5px}
+.availability-periods span{font-size:10px;color:#7d8c74}
+.managed-person.with-availability .remove-confirm{grid-column:1/-1}
+.payment-calendar-title{padding:22px 22px 0}.payment-calendar-title h2{font-size:18px}
+.payment-calendar-key{display:flex;gap:20px;padding:0 22px 20px;font-size:11px;color:#748369}
+.payment-calendar-key i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px}.due-dot{background:#b28d59}.late-dot{background:#b86b4c}.paid-dot{background:#528b8c}
+.calendar-event.payment-overdue{background:#fbede4;color:#9f5537;border-color:#bd7858}
+.payment-day{margin-bottom:22px}.payment-day-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:18px;align-items:center;padding:18px 0;border-top:1px solid var(--border)}
+.payment-day-row>div:first-child{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:7px}.payment-day-row .job-title{white-space:normal;text-align:left;line-height:1.5}
+.payment-day-row small{font-size:11px;color:#819072}.payment-day-row strong{font-size:15px;font-weight:600}.payment-day-row .secondary{padding:9px 11px;font-size:11px}
+.payment-day-row.overdue strong,.payment-day-row.overdue small{color:#aa6141}.payment-day-row.received strong{color:#427d79}
+.payment-reverse{max-width:240px;display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.payment-reverse p{flex-basis:100%;font-size:11px;color:#a55d43}
+.payment-undated{padding:22px}.payment-undated>div:not(.section-title){display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:18px;align-items:center;border-top:1px solid var(--border);padding:16px 0}.payment-undated .job-title{white-space:normal;text-align:left;line-height:1.6}.payment-undated>div>span{font-size:11px;color:#819072}.payment-undated .secondary{font-size:11px;padding:9px 11px}
+@media(max-width:650px){.managed-person.with-availability{grid-template-columns:18px minmax(0,1fr) auto}.availability-toggle{grid-column:2;grid-row:2;justify-self:start}.managed-person.with-availability>.remove-person{grid-column:3;grid-row:1}.availability-fields{grid-template-columns:1fr 1fr}.availability-fields>label:first-child{grid-column:1/-1}.availability-save{align-items:flex-start;gap:10px;flex-direction:column}.payment-day-row{grid-template-columns:minmax(0,1fr) auto;gap:12px}.payment-day-row>.secondary,.payment-day-row>.text-button,.payment-reverse{grid-column:1/-1;justify-self:start}.payment-undated>div:not(.section-title){grid-template-columns:minmax(0,1fr) auto}.payment-undated>div>.secondary{grid-column:1/-1;justify-self:start}}
