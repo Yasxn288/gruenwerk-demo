@@ -262,12 +262,10 @@
 
 .checklist-controls{margin:0;padding:0;min-width:0;border:0}.checklist-controls:disabled{opacity:.65}
 
-/* Vollständige Kalendereinträge in einem separaten Tab. */
+/* Vollständige Einträge im gemeinsamen Detailfenster. */
 .calendar-linked-day a.calendar-event{display:block}
 .calendar-linked-day a:focus-visible,.calendar-more:focus-visible{outline:3px solid #86b89c;outline-offset:2px}
-.calendar-entry-page{min-height:100vh}
-.entry-topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 32px;background:white;border-bottom:1px solid var(--border)}
-.calendar-entry-page main{max-width:1050px;padding-top:32px}
+
 .calendar-person-detail .section-title{flex-wrap:wrap}
 .calendar-person-detail .staff-calendar-name{white-space:normal;overflow-wrap:anywhere;max-width:none;font-size:18px}
 .entry-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:10px 0 22px}
@@ -295,4 +293,29 @@
 .attendance-date-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .attendance-date-controls h2{font-size:22px;letter-spacing:-.4px}
 .attendance-date-controls .attendance-today{font-size:11px;padding:8px 12px;margin-left:5px}
-@media(max-width:650px){.entry-topbar{padding:18px 16px;gap:12px}.entry-topbar .brand{font-size:17px;letter-spacing:0}.entry-topbar .brand img{width:34px;height:34px}.entry-topbar>.secondary{font-size:10px;padding:9px}.entry-facts{grid-template-columns:1fr 1fr}.entry-sites article{padding:15px}.entry-sites dl{grid-template-columns:1fr}.entry-payment-heading{flex-direction:column;gap:12px}.attendance-date-controls{gap:4px}.attendance-date-controls h2{font-size:21px}.history-heading{flex-wrap:wrap}}
+@media(max-width:650px){.entry-facts{grid-template-columns:1fr 1fr}.entry-sites article{padding:15px}.entry-sites dl{grid-template-columns:1fr}.entry-payment-heading{flex-direction:column;gap:12px}.attendance-date-controls{gap:4px}.attendance-date-controls h2{font-size:21px}.history-heading{flex-wrap:wrap}}
+
+/* Native Dialoge halten den Ausgangsbereich und seine Scrollposition offen. */
+.detail-dialog{padding:0;border:1px solid var(--border);border-radius:16px;background:var(--bg);color:var(--ink);width:min(1100px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 40px);margin:auto;overflow:hidden}
+.detail-dialog[open]{display:flex;flex-direction:column}
+.detail-dialog::backdrop{background:rgba(23,54,42,.48);backdrop-filter:blur(5px)}
+.detail-dialog-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:22px 28px;background:white;border-bottom:1px solid var(--border);flex-shrink:0}
+.detail-dialog-heading h2{font-size:21px;line-height:1.4;margin:0;overflow-wrap:anywhere}
+.detail-dialog-heading h2:focus{outline:none}
+.detail-back{margin-bottom:10px}
+.detail-dialog-body{padding:24px 28px;overflow:auto;overscroll-behavior:contain;min-height:0}
+.detail-dialog>.dialog-actions{background:white;flex-shrink:0}
+.detail-dialog .page-heading{margin-top:0}
+.detail-dialog .page-heading h1{font-size:26px;overflow-wrap:anywhere}
+.detail-dialog .detail-grid{grid-template-columns:minmax(0,1fr) 260px}
+.detail-dialog .detail-card{margin-bottom:18px}
+.calendar-entry-content>.entry-date{display:flex;align-items:center;gap:8px;color:#75846c;font-size:13px;margin:0 0 18px}
+.calendar-entry-content h2{font-size:19px;overflow-wrap:anywhere}
+.calendar-entry-content h3{margin-top:20px}
+.detail-dialog .staff-calendar-name{white-space:normal}
+.calendar-event,.calendar-more{font-family:inherit;cursor:pointer;text-align:left}
+.calendar-event{width:100%;border-top:0;border-right:0;border-bottom:0}
+.calendar-more{border:0;background:none}
+.detail-dialog .toast{position:fixed;z-index:2}
+@media(max-width:850px){.detail-dialog .detail-grid{grid-template-columns:1fr}.detail-dialog .detail-grid>aside{display:grid;grid-template-columns:1fr 1fr;gap:18px}}
+@media(max-width:650px){.detail-dialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);border-radius:12px}.detail-dialog-heading{padding:18px 16px}.detail-dialog-heading h2{font-size:18px}.detail-dialog-body{padding:18px 14px}.detail-dialog .detail-card{padding:18px}.detail-dialog .detail-grid>aside{grid-template-columns:1fr}.detail-dialog .page-heading h1{font-size:23px}.detail-dialog .info-grid{grid-template-columns:1fr}.detail-dialog .job-actions{flex-wrap:wrap}.detail-dialog .entry-facts{grid-template-columns:1fr 1fr}}
