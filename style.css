@@ -97,3 +97,22 @@
 .staff-calendar-sites button{display:flex;gap:5px;align-items:center;overflow-wrap:anywhere}
 @media(max-width:800px){.breadcrumb-step{max-width:185px}.breadcrumb-jump{font-size:11px;padding-left:4px}.breadcrumb-step .breadcrumb-menu>summary{padding:9px 4px;min-width:27px}.staff-calendar-name.compact{font-size:9px}.staff-calendar-name.compact>small{display:none}}
 @media(max-width:650px){.breadcrumb-step{position:static;max-width:175px}.job-step{max-width:190px}.calendar-mode-row{padding-right:12px}.calendar-staff-filter{padding-left:12px}.attendance-legend{padding:0 12px 15px;gap:6px 12px}.project-calendar .calendar-day{padding:7px 3px}.staff-calendar-name.compact{gap:2px}.compact .attendance-code{min-width:12px;font-size:8px}.staff-calendar-row{grid-template-columns:1fr;gap:8px}#page-content h1,#job-list-heading{scroll-margin-top:135px}}
+
+/* One calendar for projects and team planning. */
+.calendar-manage-actions{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;padding-bottom:18px}
+.calendar-manage-actions .calendar-staff-filter{padding:0}
+.calendar-manage-staff.secondary{font-size:11px;padding:8px 10px;min-height:34px}
+.staff-color-legend{flex-basis:100%;padding-top:12px;margin-top:3px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:10px}
+.staff-color-legend>span{font-size:10px;color:#6d786d;font-weight:600}
+.staff-color-legend>div{display:flex;flex-wrap:wrap;gap:7px}
+.staff-color-legend button{font-size:11px;padding:5px 9px;cursor:pointer}
+.staff-color-legend button[aria-pressed=true]{outline:2px solid var(--staff-ink);outline-offset:2px}
+.staff-color-legend button:hover{box-shadow:0 0 0 1px var(--staff-line)}
+.staff-color-legend button:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.team-day-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.team-day-actions>.secondary{font-size:11px}
+.integrated-team-plan .team-day-heading{align-items:flex-start}
+.calendar-day-section h2{scroll-margin-top:115px}
+.calendar-day-section h2:focus{outline:2px solid #8ca98c;outline-offset:6px;border-radius:3px}
+@media(max-width:800px){.calendar-manage-actions{padding-left:22px}.team-day-actions{width:100%}.integrated-team-plan .team-day-heading{gap:15px}}
+@media(max-width:650px){.calendar-manage-actions{padding-left:12px}.calendar-day-section h2{scroll-margin-top:135px}.team-day-actions .search{max-width:none;flex:1}}
