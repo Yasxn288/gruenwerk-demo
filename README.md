@@ -2,7 +2,7 @@
 
 Demo öffnen: https://yasxn288.github.io/gruenwerk-demo/
 
-Stand: 25. Oktober 2026. Baustellenverwaltung, separater Baustellen-/Zahlungskalender und Teamplanungskalender, Mitarbeitersperren, Fristenglocke, Anwesenheitsprotokoll sowie zentrale Anhänge und interne Notizen unter Organisation.
+Stand: 25. Oktober 2026. Baustellenverwaltung, separater Baustellen-/Zahlungskalender und Teamplanungskalender, Mitarbeitersperren, Fristenglocke, Anwesenheitsprotokoll mit Historie, klickbare obere Navigation sowie zentrale Anhänge und interne Notizen unter Organisation.
 
 Öffentliche Vorführkopie mit fiktiven Beispieldaten, ohne Anmeldung. Eingaben und Dateien werden nur im jeweiligen Browser gespeichert; keine gemeinsame Datenbank oder geräteübergreifende Synchronisation. Keine echten Kundendaten im Repository.
 
