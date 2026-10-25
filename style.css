@@ -76,14 +76,6 @@
 .attendance-legend>span{white-space:nowrap}.attendance-legend b{font-size:11px;color:var(--ink)}
 .attendance-legend>small{flex-basis:100%;font-size:10px;color:#6d786d;line-height:1.5}
 .staff-calendar-name{--staff-bg:#e8f1e9;--staff-ink:#285d3d;--staff-line:#65926f;display:inline-flex;align-items:center;gap:7px;max-width:100%;background:var(--staff-bg);color:var(--staff-ink);border-left:3px solid var(--staff-line);border-radius:5px;padding:6px 9px;font-size:12px;line-height:1.5}
-.staff-color-0{--staff-bg:#e5f1e9;--staff-ink:#235337;--staff-line:#649474}
-.staff-color-1{--staff-bg:#e8eef9;--staff-ink:#2e4c7b;--staff-line:#718bb7}
-.staff-color-2{--staff-bg:#f2e9f7;--staff-ink:#694180;--staff-line:#a385b6}
-.staff-color-3{--staff-bg:#f8eddf;--staff-ink:#795022;--staff-line:#b79562}
-.staff-color-4{--staff-bg:#e1f1f0;--staff-ink:#235f60;--staff-line:#67a3a1}
-.staff-color-5{--staff-bg:#f8e7eb;--staff-ink:#7d3d52;--staff-line:#bb8194}
-.staff-color-6{--staff-bg:#edf0dc;--staff-ink:#536021;--staff-line:#96a15c}
-.staff-color-7{--staff-bg:#ebeaf8;--staff-ink:#51477b;--staff-line:#9388bd}
 .staff-calendar-name>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .staff-calendar-name>small{font-size:8px;margin-left:auto;flex-shrink:0}
 .attendance-code{font-size:11px;flex-shrink:0;min-width:17px;text-align:center}
@@ -191,3 +183,37 @@
 .calendar-assignment-context>div{display:flex;flex-direction:column;gap:7px}
 .calendar-assignment-context .date-picker-trigger{justify-content:flex-start;border:1px solid #dfe5d9;padding:10px 12px;font-size:12px;min-height:41px}
 @media(max-width:650px){.calendar-site-picker>div{grid-template-columns:1fr}.calendar-manage-staff.secondary{font-size:11px;padding:8px 10px}}
+
+.repayment-editor{min-width:0}.repayment-editor .repayment-progress{margin:20px 0}
+.repayment-amounts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.repayment-amounts>div{min-width:0;display:flex;flex-direction:column;gap:9px}
+.repayment-amounts small{font-size:11px;color:#7d8a73}
+.repayment-amounts b{font-size:24px;font-weight:600;letter-spacing:-.5px;overflow-wrap:anywhere}
+.repayment-amounts>div:nth-child(2) b{color:#40785f}
+.repayment-progress progress{display:block;width:100%;height:8px;margin:20px 0 10px;appearance:none;border:0;border-radius:20px;background:#edf1e8;overflow:hidden}
+.repayment-progress progress::-webkit-progress-bar{background:#edf1e8;border-radius:20px}
+.repayment-progress progress::-webkit-progress-value{background:#51846b;border-radius:20px}
+.repayment-progress progress::-moz-progress-bar{background:#51846b;border-radius:20px}
+.repayment-equation{font-size:11px;line-height:1.8;color:#7b876e;display:flex;align-items:center;flex-wrap:wrap;gap:3px}
+.repayment-equation span{margin-left:auto;color:#40785f}
+.repayment-next{padding:14px 16px;margin:20px 0 0;background:#f5f7f0;border-radius:7px;font-size:12px;line-height:1.8}
+.repayment-details{border-top:1px solid var(--border);margin-top:20px;padding-top:16px}
+.repayment-details summary{cursor:pointer;font-size:12px;font-weight:600;color:var(--green)}
+.repayment-details .table-scroll{margin-top:12px}
+.repayment-overview{padding:24px;margin-bottom:24px}
+.repayment-overview>h2{margin-bottom:22px}
+.repayment-explanation{font-size:12px;line-height:1.8;color:#7d8975;margin:20px 0 24px;max-width:650px}
+.repayment-accounts{display:grid;gap:16px}
+.repayment-accounts article{padding:20px;border:1px solid var(--border);border-radius:8px}
+.repayment-accounts article .section-title{margin-bottom:20px}
+.repayment-accounts .job-title{white-space:normal;text-align:left;font-size:14px}
+.repayment-progress.compact .repayment-amounts b{font-size:18px}
+.repayment-account-actions{display:flex;flex-wrap:wrap;gap:15px;align-items:center;margin-top:16px}
+.repayment-account-actions>span{margin-right:auto;font-size:11px;color:#79876c}
+.repayment-account-actions button{font-size:11px}
+.receipt-job-choice{padding:24px 28px 0}
+.repayment-remainder{padding:12px;background:#edf4e8;border-radius:6px;font-size:12px}
+.repayment-preview{padding:10px 12px;background:#f4f7ee;border-radius:6px}
+@media(max-width:650px){.repayment-overview{padding:18px}.repayment-amounts{gap:10px}.repayment-amounts b{font-size:18px}.repayment-progress.compact .repayment-amounts b{font-size:15px}.repayment-accounts article{padding:14px}.repayment-amounts small{font-size:10px}.repayment-account-actions>span{flex-basis:100%}.repayment-equation span{flex-basis:100%;margin:0}}
+
+.repayment-account{border-top:1px solid var(--border)}.repayment-account>summary{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:18px 0;cursor:pointer;font-weight:600;font-size:13px;list-style:none}.repayment-account>summary:after{content:"⌄";color:var(--green)}.repayment-account[open]>summary:after{content:"⌃"}.repayment-account-summary{display:flex;flex-direction:column;gap:6px;text-align:right;margin-left:auto;white-space:nowrap}.repayment-account-summary b{font-weight:500}.repayment-account-summary small{font-size:10px;font-weight:400;color:#748369}.repayment-account-body{padding:5px 0 20px}.repayment-account>summary:focus-visible{outline:3px solid #86b89c;outline-offset:3px;border-radius:4px}

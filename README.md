@@ -2,7 +2,7 @@
 
 Demo öffnen: https://yasxn288.github.io/gruenwerk-demo/
 
-Stand: 25. Oktober 2026. Baustellenverwaltung, Kalender mit integrierter Teamplanung, zentraler Mitarbeiterverfügbarkeit und Zahlungskalender, Fristenglocke, Anwesenheitsprotokoll mit Historie, klickbare obere Navigation, regionale Kartenvorschläge im Rheingau-Taunus-Kreis und direkte Aktualisierung zwischen Browser-Tabs; automatische Versionsprüfung mit Schutz offener Formulare und geprüfte lokale Sicherungskopien sowie zentrale Anhänge und interne Notizen unter Organisation.
+Stand: 25. Oktober 2026. Baustellenverwaltung, Kalender mit integrierter Teamplanung, eindeutigen Mitarbeiterfarben, gespeicherten Von-bis-Abwesenheiten und automatischem Tilgungsplan mit Zahlungskalender, Fristenglocke, Anwesenheitsprotokoll mit Historie, klickbare obere Navigation, regionale Kartenvorschläge im Rheingau-Taunus-Kreis und direkte Aktualisierung zwischen Browser-Tabs; automatische Versionsprüfung mit Schutz offener Formulare und geprüfte lokale Sicherungskopien sowie zentrale Anhänge und interne Notizen unter Organisation.
 
 Öffentliche Vorführkopie mit fiktiven Beispieldaten, ohne Anmeldung. Eingaben und Dateien werden nur im jeweiligen Browser gespeichert; keine gemeinsame Datenbank oder geräteübergreifende Synchronisation. Keine echten Kundendaten im Repository.
 
