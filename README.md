@@ -1,7 +1,9 @@
-# Grünwerk Kundendemo
+# Grünwerk Gartenbau – Kundendemo
 
-Vorführversion mit Beispieldaten: https://Yasxn288.github.io/gruenwerk-demo/
+Demo öffnen: https://yasxn288.github.io/gruenwerk-demo/
 
-Keine Anmeldung nötig. Eingaben und Dateien bleiben ausschließlich im jeweiligen Browser. Keine Synchronisation und keine produktive Benutzerverwaltung.
+Stand: 25. Oktober 2026. Baustellenverwaltung, Monatskalender mit Einnahmen und geplanten Zahlungen, Mitarbeitersperren, Fristenglocke, Anwesenheitsprotokoll mit Tageseinteilung und interne Artikel in Ordnern.
 
-Stand: bisherige Baustellendemo, ohne den verworfenen Pilotumbau.
+Öffentliche Vorführkopie mit fiktiven Beispieldaten, ohne Anmeldung. Eingaben und Dateien werden nur im jeweiligen Browser gespeichert; keine gemeinsame Datenbank oder geräteübergreifende Synchronisation. Keine echten Kundendaten im Repository.
+
+Der Quellcode wird im privaten Repository Yasxn288/Gartenbau-Gr-nwerk gepflegt. Dort erzeugt npm run build:demo diese statische Vorführkopie. Änderungen werden in beiden Repositories veröffentlicht.
