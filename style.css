@@ -319,3 +319,5 @@
 .detail-dialog .toast{position:fixed;z-index:2}
 @media(max-width:850px){.detail-dialog .detail-grid{grid-template-columns:1fr}.detail-dialog .detail-grid>aside{display:grid;grid-template-columns:1fr 1fr;gap:18px}}
 @media(max-width:650px){.detail-dialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);border-radius:12px}.detail-dialog-heading{padding:18px 16px}.detail-dialog-heading h2{font-size:18px}.detail-dialog-body{padding:18px 14px}.detail-dialog .detail-card{padding:18px}.detail-dialog .detail-grid>aside{grid-template-columns:1fr}.detail-dialog .page-heading h1{font-size:23px}.detail-dialog .info-grid{grid-template-columns:1fr}.detail-dialog .job-actions{flex-wrap:wrap}.detail-dialog .entry-facts{grid-template-columns:1fr 1fr}}
+
+.invoice-panel>.section-title{align-items:flex-start;flex-wrap:wrap}.invoice-panel .view-actions{display:flex;flex-wrap:wrap;gap:8px}.invoice-panel .view-actions>button{max-width:100%}
