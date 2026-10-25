@@ -176,3 +176,18 @@
 .payment-difference.partial{background:#faf6e9;color:#81652f}
 .payment-difference.complete{background:#edf4e5;color:#4e7447}
 .rate-fields input[aria-invalid=true]{border-color:#b96d52;box-shadow:0 0 0 2px #bd75511a}
+
+.staff-calendar-day{cursor:pointer}
+.calendar-staff-date{display:flex;align-items:flex-start;align-self:stretch;text-align:left;border-radius:4px}
+.calendar-staff-event{display:block;width:100%;min-width:0;border-radius:4px;text-align:left}
+.calendar-staff-event .staff-calendar-name{width:100%}
+.calendar-staff-event:hover{filter:brightness(.96)}
+.calendar-staff-event:focus-visible,.calendar-staff-date:focus-visible{outline:3px solid #86b89c;outline-offset:1px}
+.calendar-attendance-body .calendar-site-picker{padding:0;border:0;margin:0 0 18px;min-width:0}
+.calendar-site-picker legend{font-size:11px;color:var(--ink);margin-bottom:10px}
+.calendar-site-picker>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;max-height:180px;overflow:auto;border:1px solid var(--border);padding:9px;border-radius:6px}
+.calendar-attendance-body .calendar-site-picker label{display:flex;flex-direction:row;align-items:center;gap:8px;margin:0;padding:8px;background:#f8faf5;border-radius:4px;font-size:11px;line-height:1.6}
+.calendar-attendance-body .calendar-site-picker input{width:15px;height:15px;padding:0;flex-shrink:0;accent-color:var(--green)}
+.calendar-assignment-context>div{display:flex;flex-direction:column;gap:7px}
+.calendar-assignment-context .date-picker-trigger{justify-content:flex-start;border:1px solid #dfe5d9;padding:10px 12px;font-size:12px;min-height:41px}
+@media(max-width:650px){.calendar-site-picker>div{grid-template-columns:1fr}.calendar-manage-staff.secondary{font-size:11px;padding:8px 10px}}
