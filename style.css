@@ -56,3 +56,44 @@
 
 /* Anklickbare Karten-Adressen im Baustellenformular. */
 .address-picker{margin-bottom:19px}.form-body .address-field-label{margin:0 0 8px;font-size:11px;font-weight:500}.address-input-wrap{position:relative}.form-body .address-input-wrap>input{padding-right:38px}.address-field-icon{position:absolute;right:12px;top:12px;color:#88a079;pointer-events:none;display:flex}.address-suggestions{position:absolute;top:calc(100% + 5px);left:0;right:0;z-index:110;list-style:none;padding:5px;margin:0;background:#fff;border:1px solid #dce5d2;border-radius:8px;box-shadow:0 10px 30px #29432324;max-height:260px;overflow:auto}.address-suggestions>li{display:flex;align-items:center;gap:11px;padding:11px 10px;cursor:pointer;border-radius:5px}.address-suggestions>li:hover,.address-suggestions>li.active-option{background:#edf4e5}.address-suggestions>li>svg{color:#8b9e7b}.address-suggestions>li>span{min-width:0}.address-suggestions b{font-size:12px;font-weight:500;display:block;line-height:1.5;overflow-wrap:anywhere}.address-suggestions small{display:block;font-size:10px;line-height:1.6;color:#89967a;margin-top:4px}.address-hint{margin-top:8px;font-size:10px;line-height:1.6;color:#93a087}.address-confirmed{color:#6b8d55}.address-attribution{display:block;font-size:9px;margin-top:5px;color:#a1aa96;line-height:1.5}.address-attribution a{text-decoration:underline;text-underline-offset:2px}.address-spinner{animation:address-spin 1s linear infinite}@keyframes address-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.address-spinner{animation:none}}
+
+/* Direct page jumps and compact employee calendar. */
+#page-content h1,#job-list-heading{scroll-margin-top:115px}
+#page-content h1:focus,#job-list-heading:focus{outline:2px solid #8ca98c;outline-offset:6px;border-radius:3px}
+.breadcrumb-step{position:relative;display:flex;align-items:center;min-width:0;max-width:220px}
+.breadcrumb-step .breadcrumb-menu{position:static}
+.breadcrumb-jump{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:10px 4px 10px 9px;font-size:12px;color:#63765b;border-radius:6px}
+.breadcrumb-jump:hover{background:#f3f7ed;color:var(--green);text-decoration:underline}
+.breadcrumb-jump:focus-visible{outline:3px solid #86b89c;outline-offset:2px}
+.page-step>.breadcrumb-jump{color:var(--ink);font-weight:600}
+.job-step{max-width:240px}.job-step>.breadcrumb-jump{font-size:11px}
+.breadcrumb-step .breadcrumb-menu>summary{padding:10px 7px;min-width:30px;justify-content:center}
+.calendar-mode-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-right:22px;flex-wrap:wrap}
+.calendar-view-switch>button{display:flex;align-items:center;gap:7px}
+.calendar-staff-filter{padding-bottom:18px}
+.calendar-staff-filter select{max-width:210px;border:1px solid var(--border);border-radius:6px;padding:8px 10px;background:#fff;font-size:11px;color:var(--ink)}
+.attendance-legend{display:flex;flex-wrap:wrap;gap:9px 16px;padding:0 22px 18px;font-size:10px;color:#5c6d5f}
+.attendance-legend>span{white-space:nowrap}.attendance-legend b{font-size:11px;color:var(--ink)}
+.attendance-legend>small{flex-basis:100%;font-size:10px;color:#6d786d;line-height:1.5}
+.staff-calendar-name{--staff-bg:#e8f1e9;--staff-ink:#285d3d;--staff-line:#65926f;display:inline-flex;align-items:center;gap:7px;max-width:100%;background:var(--staff-bg);color:var(--staff-ink);border-left:3px solid var(--staff-line);border-radius:5px;padding:6px 9px;font-size:12px;line-height:1.5}
+.staff-color-0{--staff-bg:#e5f1e9;--staff-ink:#235337;--staff-line:#649474}
+.staff-color-1{--staff-bg:#e8eef9;--staff-ink:#2e4c7b;--staff-line:#718bb7}
+.staff-color-2{--staff-bg:#f2e9f7;--staff-ink:#694180;--staff-line:#a385b6}
+.staff-color-3{--staff-bg:#f8eddf;--staff-ink:#795022;--staff-line:#b79562}
+.staff-color-4{--staff-bg:#e1f1f0;--staff-ink:#235f60;--staff-line:#67a3a1}
+.staff-color-5{--staff-bg:#f8e7eb;--staff-ink:#7d3d52;--staff-line:#bb8194}
+.staff-color-6{--staff-bg:#edf0dc;--staff-ink:#536021;--staff-line:#96a15c}
+.staff-color-7{--staff-bg:#ebeaf8;--staff-ink:#51477b;--staff-line:#9388bd}
+.staff-calendar-name>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.staff-calendar-name>small{font-size:8px;margin-left:auto;flex-shrink:0}
+.attendance-code{font-size:11px;flex-shrink:0;min-width:17px;text-align:center}
+.staff-calendar-name.compact{display:flex;font-size:10px;gap:4px;padding:3px 4px;border-left-width:2px}
+.compact .attendance-code{font-size:9px;min-width:15px}
+.staff-calendar-agenda{margin-top:18px}
+.staff-calendar-row{display:grid;grid-template-columns:minmax(160px,1fr) minmax(0,1fr);gap:20px;padding:17px 0;border-top:1px solid var(--border)}
+.staff-calendar-row p{font-size:11px;color:#6c7d6b;margin-top:7px;line-height:1.5}
+.staff-calendar-sites{display:flex;align-items:flex-start;flex-direction:column;justify-content:center;gap:5px;min-width:0}
+.staff-calendar-sites small,.staff-calendar-sites>span{font-size:11px;color:#63765b}
+.staff-calendar-sites button{display:flex;gap:5px;align-items:center;overflow-wrap:anywhere}
+@media(max-width:800px){.breadcrumb-step{max-width:185px}.breadcrumb-jump{font-size:11px;padding-left:4px}.breadcrumb-step .breadcrumb-menu>summary{padding:9px 4px;min-width:27px}.staff-calendar-name.compact{font-size:9px}.staff-calendar-name.compact>small{display:none}}
+@media(max-width:650px){.breadcrumb-step{position:static;max-width:175px}.job-step{max-width:190px}.calendar-mode-row{padding-right:12px}.calendar-staff-filter{padding-left:12px}.attendance-legend{padding:0 12px 15px;gap:6px 12px}.project-calendar .calendar-day{padding:7px 3px}.staff-calendar-name.compact{gap:2px}.compact .attendance-code{min-width:12px;font-size:8px}.staff-calendar-row{grid-template-columns:1fr;gap:8px}#page-content h1,#job-list-heading{scroll-margin-top:135px}}
