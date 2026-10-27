@@ -389,3 +389,19 @@ dialog[open]:has(dialog[open])>.detail-dialog-body,dialog[open]:has(dialog[open]
 @media(max-width:650px){.topbar .top-new-label{display:none}.topbar .top-new-job{padding:10px;min-width:36px}.topbar .demo-profile-switch{display:block;font-size:9px;padding:5px}.top-right{gap:6px}.task-mode-switch{padding:12px 20px}.chat-composer{align-items:stretch;flex-direction:column}.chat-composer>.primary{align-self:flex-end}.chat-team-editor>div{grid-template-columns:1fr}.employee-header{padding:16px}.employee-brand{font-size:16px}.employee-header>.secondary{font-size:10px;padding:8px}.employee-main{padding:20px 12px}.employee-demo-banner{flex-wrap:wrap}.employee-task{align-items:flex-start;flex-wrap:wrap}.employee-task select{margin-left:29px}.employee-job{align-items:flex-start}}
 
 dialog.edit-dialog .date-picker-body{min-height:0;overflow:auto;overscroll-behavior:contain}
+
+/* Chat drafts reuse the normal composer and the shared in-page dialog. */
+.chat-quick-actions:empty{display:none}
+.chat-quick-actions{display:flex;justify-content:flex-start;margin-top:16px}
+.chat-draft-job{font-weight:700;margin:0}
+.chat-draft-group{border:0;padding:0;margin:8px 0 20px;min-width:0}
+.chat-draft-group legend{font-size:14px;font-weight:700;padding:0;margin-bottom:8px}
+.chat-draft-group .form-hint{margin:0 0 10px}
+.chat-draft-choices{display:grid;gap:8px}
+.form-body .chat-draft-choices label{display:flex;flex-direction:row;margin-bottom:0;align-items:flex-start;gap:12px;padding:12px;border:1px solid var(--border);border-radius:8px;background:#f7f9f5;cursor:pointer}
+.form-body .chat-draft-choices label:has(input:checked){background:#edf3e7;border-color:#93ab83}
+.form-body .chat-draft-choices input{width:18px;height:18px;min-width:18px;flex:0 0 18px;margin:2px 0 0;padding:0;accent-color:#285b4b}
+.chat-draft-choices span{white-space:pre-wrap;overflow-wrap:anywhere}
+.chat-draft-choices small{display:block;margin-top:5px;color:#70806d;white-space:pre-wrap}
+.chat-draft-preview{min-height:180px;resize:vertical}
+@media(max-width:650px){.chat-draft-group legend{font-size:14px}.chat-quick-actions .secondary{width:100%}}
